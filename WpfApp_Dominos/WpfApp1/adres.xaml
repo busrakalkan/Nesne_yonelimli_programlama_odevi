@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.adres"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="700" Width="500">
+    <Grid>
+        <StackPanel>
+            <Image Height="53" Margin="195,5,195,0" Source="C:\Users\user\source\repos\WpfApp1\WpfApp1\images\indir.png" Stretch="Fill"/>
+            <TextBlock Text="Adres Adı" FontSize="15" FontWeight="Bold" Margin="0,20,0,0"/>
+            <TextBox x:Name="AçıklamaTexti" Text="Ör:Ofis" />
+            <TextBlock x:Name="TelefonTexti" Text="Telefon" FontSize="15" FontWeight="Bold" Margin="0,9,0,0"/>
+            <TextBox x:Name="T" Text="Ör:521 453 12 54" TextChanged="T_TextChanged" />
+            <TextBlock x:Name="AdresTexti" Text="Adres" FontSize="15" FontWeight="Bold" Margin="0,9,0,0"/>
+            <TextBox Text="Ör:... ilçe/il"/>
+            <Button x:Name="Ekle" Height="70" Margin="130,50,130,0" Background="#FF30E408" BorderBrush="Black" Click="Ekle_Click">
+                <Label Content="EKLE" FontSize="20" FontWeight="DemiBold" Foreground="White" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

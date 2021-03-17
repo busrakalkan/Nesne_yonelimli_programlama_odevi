@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="500">
+    <Grid x:Name="Giriş">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <Image Height="100" Margin="104,0,90,0" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\indir (1).png" Stretch="Fill"/>
+            <TextBlock Text="Pizzanı Nasıl" FontSize="30" FontWeight="Bold" Margin="161,5,94,0" Height="56"/>
+            <TextBlock Text="Almak İstersin?" FontSize="30" FontWeight="Bold" Margin="146,0,94,30" Height="56" />
+            <Button x:Name="buton1" Height="70" Margin="118,0,94,0" Background="White" BorderBrush="Black" Click="Buton1_Click">
+                <StackPanel>
+                    <Image Height="30" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\icons8-scooter-80.png" Stretch="Fill" Width="35"/>
+                    <Label Content="Adresime Teslim Edilsin" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+
+            </Button>
+            <Button x:Name="buton2" Height="74" Margin="118,50,94,70" Background="White" BorderBrush="Black" Click="Buton2_Click">
+                <StackPanel>
+
+                    <Image Height="30" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\icons8-shop-96.png" Stretch="Fill" Width="35"/>
+                    <Label Content="Şubeye Gelip Alacağım" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Image Height="480" Margin="34,0,34,0" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\635845033276296250.png" Stretch="Fill"/>
+
+
+        </StackPanel>
+    </Grid>
+
+</Window>

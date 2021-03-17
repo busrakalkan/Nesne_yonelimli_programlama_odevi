@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.AnaSayfa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AnaSayfa" Height="700" Width="500">
+    <Grid>
+        <Image Margin="210,0,230,629" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\indir.png" Stretch="Fill"/>
+        <Image Margin="0,45,0,426" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\indirlkjh.jpg" Stretch="Fill"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="kampanya" Margin="24,272,27,304" Background="White" BorderBrush="Black" Grid.Column="0" Click="Kampanya_Click">
+                <StackPanel>
+                    <Image Height="46" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\icons8-pizza-100.png" Stretch="Fill" Width="45"/>
+                    <Label Content="Kampanyalılar" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="pizza" Margin="24,272,27,304" Background="White" BorderBrush="Black" Grid.Column="1" Click="Pizza_Click">
+                <StackPanel>
+                    <Image Height="38" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\635845033276296250.png" Stretch="Fill" Width="47"/>
+                    <Label Content="Tüm Pizzalar" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.497,-0.395" Height="26" Width="101"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="icecek" Margin="24,272,27,304" Background="White" BorderBrush="Black" Grid.Column="2" Click="Icecek_Click">
+                <StackPanel>
+                    <Image Height="50" Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\icons8-cola-100.png" Stretch="Fill" Width="54"/>
+                    <Label Content="içecekler" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Button x:Name="pro_kod" Margin="25,379,54,224" Background="White" BorderBrush="Black" >
+            <StackPanel>
+                <Label Content="Promosyon Kodu Kullan" FontSize="20" FontWeight="Bold" Margin="88,10,69,205" Width="253"/>
+            </StackPanel>
+        </Button>
+
+        <TextBlock Text="Teslimat Tipi:" FontSize="15" FontWeight="Bold" Margin="25,450,367,178"/>
+        <TextBox x:Name="tes_tip" Background="AliceBlue" Margin="130,450,167,178"/>
+        <TextBlock x:Name="bilgi" Text="Bilgi" FontSize="15" FontWeight="Bold" Margin="25,500,367,128"/>
+        <TextBox x:Name="bilgi_texti" Background="AliceBlue" Margin="130,500,100,128"/>
+
+    </Grid>
+</Window>

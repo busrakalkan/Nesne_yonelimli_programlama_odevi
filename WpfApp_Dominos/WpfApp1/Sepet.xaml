@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.Sepet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Sepet" Height="600" Width="500">
+    <Grid>
+        <Image Source="C:\Users\bus\Desktop\ders\projeler\WpfApp1\WpfApp1\images\indir (1).png" Margin="71,-28,87,504"/>
+        <Label Content="Sipariş Bilgisi:" FontWeight="Bold" Margin="36,89,341,442"/>
+        <TextBlock x:Name="siparişler" Text="" Background="AliceBlue" FontSize="20" Margin="36,127,43,394"/>
+        <Label Content="Toplam Fiyat:" FontWeight="Bold" Margin="36,187,341,333" FontSize="13"/>
+        <TextBlock x:Name="fiyat" Text="0" Background="AliceBlue" FontSize="20" Margin="202,193,134,333"/>
+        <TextBlock x:Name="Adres" Text="Adres Bilgisi:" FontWeight="Bold" Margin="36,255,380,290"/>
+        <TextBlock x:Name="A_text" Text="" FontWeight="Bold" Margin="134,255,43,290" Background="AliceBlue"/>
+        <TextBlock x:Name="username" Text="Kullanıcı Adı:" FontWeight="Bold" Margin="36,301,380,244"/>
+        <TextBox x:Name="username_text" FontWeight="Bold" Margin="134,301,43,244" Background="AliceBlue" />
+        <TextBlock x:Name="password" Text="Şifre:" FontWeight="Bold" Margin="36,349,380,196"/>
+        <TextBox x:Name="password_text" FontWeight="Bold" Margin="134,349,43,196" Background="AliceBlue" TextChanged="password_text_TextChanged"/>
+        <Button x:Name="register" Background="AliceBlue" BorderBrush="Blue"  Margin="36,458,269,46" Click="Register_Click" >
+            <Label Content="Üye Ol" FontSize="30" FontWeight="Bold" Foreground="Blue"/>
+        </Button>
+        <Button x:Name="şifre_değiş" Background="AliceBlue" BorderBrush="Blue"  Margin="68,398,87,133" Click="Şifre_değiş_Click" >
+            <Label Content="Şifre Değiştir" FontSize="15" FontWeight="Bold" Foreground="Blue"/>
+        </Button>
+        <Button x:Name="sipariş_ver" Background="#FF30E408" BorderBrush="Black" Margin="253,458,43,46" Click="Sipariş_ver_Click" >
+            <Label Content="Sipariş Ver" FontSize="30" FontWeight="Bold" Foreground="White"/>
+        </Button>
+    </Grid>
+</Window>
